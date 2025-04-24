@@ -47,8 +47,7 @@
                 const data = mockData[trackingNumber];
                 infoDiv.innerHTML = `
                     <h2>${data.company} - 运单号：${trackingNumber}</h2>
-                    <p><strong>发货地址：</strong>${data.from}</p>
-                    <p><strong>收货地址：</strong>${data.to}</p>
+             
                     <h3>物流状态：</h3>
                     <ul>${data.status.map(item => `<li>${item}</li>`).join('')}</ul>
                 `;
